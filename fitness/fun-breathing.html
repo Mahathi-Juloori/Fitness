@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Fun Breathing Exercises</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #aca7a7; /* Same background color as previous pages */
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.6;
+                }
+        
+                /* Container */
+                .container {
+                    padding: 20px;
+                }
+        
+                h1 {
+                    text-align: center;
+                    font-size: 2.5em;
+                    color: #333;
+                }
+        
+                .quiz-container {
+                    margin-top: 20px;
+                    text-align: center;
+                }
+        
+                button {
+                    background-color: #28a745;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin: 10px;
+                }
+        
+                button:hover {
+                    background-color: #218838;
+                }
+        
+                .sound-container {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                nav ul {
+            list-style-type: none;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        
+            </style>
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        
+            <div class="container">
+                <h1>Fun Breathing Exercises</h1>
+        
+                <!-- Fun Breathing Exercise Content -->
+                <p>Let's try some fun breathing exercises! Follow the steps and relax your body and mind:</p>
+                
+                <div class="quiz-container">
+                    <h2>Quiz 1: How many counts do you inhale in Box Breathing?</h2>
+                    <button onclick="checkAnswer('4')">Answer: 4</button>
+                    <button onclick="checkAnswer('5')">Answer: 5</button>
+                    <button onclick="checkAnswer('6')">Answer: 6</button>
+                </div>
+        
+                <div class="quiz-container">
+                    <h2>Quiz 2: What is the purpose of Alternate Nostril Breathing?</h2>
+                    <button onclick="checkAnswer('Balance energy')">Answer: Balance energy</button>
+                    <button onclick="checkAnswer('Increase heart rate')">Answer: Increase heart rate</button>
+                    <button onclick="checkAnswer('Improve flexibility')">Answer: Improve flexibility</button>
+                </div>
+        
+                <div class="quiz-container">
+                    <h2>Quiz 3: How long should you practice diaphragmatic breathing?</h2>
+                    <button onclick="checkAnswer('5-10 minutes')">Answer: 5-10 minutes</button>
+                    <button onclick="checkAnswer('1 hour')">Answer: 1 hour</button>
+                    <button onclick="checkAnswer('15-30 minutes')">Answer: 15-30 minutes</button>
+                </div>
+        
+                <!-- Play Relaxing Sound -->
+                <div class="sound-container">
+                    <h2>Relaxing Breathing Sound</h2>
+                    <audio controls>
+                        <source src="C:\Users\mahat\Desktop\fitness\long-single-breath-through-nose-male-01-25409.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        
+            <script>
+                function checkAnswer(answer) {
+                    let correctAnswers = {
+                        '4': 'Quiz 1: Correct! Box Breathing involves inhaling for 4 counts.',
+                        'Balance energy': 'Quiz 2: Correct! Alternate Nostril Breathing helps balance energy.',
+                        '5-10 minutes': 'Quiz 3: Correct! Practice diaphragmatic breathing for 5-10 minutes.'
+                    };
+                    
+                    if (correctAnswers[answer]) {
+                        alert(correctAnswers[answer]);
+                    } else {
+                        alert('Oops! That\'s not the correct answer. Try again!');
+                    }
+                }
+            </script>
+        </body>
+        </html>
+        
+
+       

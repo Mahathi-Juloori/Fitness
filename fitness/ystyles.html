@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Workouts</title>
+    <link rel="stylesheet" href="substyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="filter-container">
+        <label for="filter">Filter Yoga: </label>
+        <select id="filter" onchange="filterCards(this.value)">
+            <option value="all">Show All</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+    </div>
+    <div class="container">
+        <h1>YOGA WORKOUTS</h1>
+        <div class="section">
+            <!-- Hatha Yoga Cards -->
+            <div class="card" data-url="https://youtu.be/uH2N2gmjhl0?si=qHVt1NEDHrfRZJsB" data-category="beginner">
+                <img src="C:\Users\mahat\Desktop\fitness\hy1.avif" alt="Hatha Beginner" class="card-image">
+                <div class="card-content">
+                    <h3>Hatha Yoga Beginner</h3>
+                    <p><b>Description:</b> A gentle introduction to Hatha yoga for beginners, focusing on foundational poses and breathing techniques.</p>
+                    <p><b>Duration:</b> 30 minutes</p>
+                    <p><b>Benefits:</b> Increases flexibility, improves posture, enhances relaxation, and promotes mental clarity.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/nYxXKBGKwOw?si=MPkJafl07riMQUDD" data-category="intermediate">
+                <img src="C:\Users\mahat\Desktop\fitness\hy2.avif" alt="Hatha Intermediate" class="card-image">
+                <div class="card-content">
+                    <h3>Hatha Yoga Intermediate</h3>
+                    <p><b>Description:</b> Intermediate Hatha yoga sequence to deepen flexibility and strength with more challenging postures.</p>
+                    <p><b>Duration:</b> 45 minutes</p>
+                    <p><b>Benefits:</b> Builds muscle strength, improves posture, enhances flexibility, and helps reduce stress.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/jsbAwAJz4tM?si=-kiFq1FP8NiTTT7E" data-category="advanced">
+                <img src="C:\Users\mahat\Desktop\fitness\hy3.avif" alt="Hatha Advanced" class="card-image">
+                <div class="card-content">
+                    <h3>Hatha Yoga Advanced</h3>
+                    <p><b>Description:</b> Advanced Hatha yoga practice focusing on mastery of poses and breath control for enhanced mind-body connection.</p>
+                    <p><b>Duration:</b> 60 minutes</p>
+                    <p><b>Benefits:</b> Improves balance, builds strength, increases flexibility, and enhances mental clarity and focus.</p>
+                </div>
+            </div>
+
+            <!-- Vinyasa Yoga Cards -->
+            <div class="card" data-url="https://youtu.be/9ZRvdbG54H4?si=Nih9p-00IP1F5IU4" data-category="beginner">
+                <img src="C:\Users\mahat\Desktop\fitness\vy1.avif" alt="Vinyasa Beginner" class="card-image">
+                <div class="card-content">
+                    <h3>Vinyasa Yoga Beginner</h3>
+                    <p><b>Description:</b> A beginner-friendly Vinyasa flow focusing on smooth transitions between poses and developing a strong foundation.</p>
+                    <p><b>Duration:</b> 35 minutes</p>
+                    <p><b>Benefits:</b> Improves cardiovascular health, enhances flexibility, builds strength, and promotes mental focus.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/W-e55pc4ZSk?si=QsX1a356q0bjVi9O" data-category="intermediate">
+                <img src="C:\Users\mahat\Desktop\fitness\vy2.avif" alt="Vinyasa Intermediate" class="card-image">
+                <div class="card-content">
+                    <h3>Vinyasa Yoga Intermediate</h3>
+                    <p><b>Description:</b> Intermediate Vinyasa flow emphasizing coordination between breath and movement, building strength and flexibility.</p>
+                    <p><b>Duration:</b> 50 minutes</p>
+                    <p><b>Benefits:</b> Increases strength, improves balance, enhances flexibility, and promotes relaxation.</p>
+                </div>
+            </div>
+            <div class="card" data-url="https://youtu.be/6LeKFE_aB4I?si=wc0eDad-MjZYa272" data-category="advanced">
+                <img src="C:\Users\mahat\Desktop\fitness\vy3.avif" alt="Vinyasa Advanced" class="card-image">
+                <div class="card-content">
+                    <h3>Vinyasa Yoga Advanced</h3>
+                    <p><b>Description:</b> Advanced Vinyasa yoga focusing on challenging poses, inversions, and intense breathing techniques for expert practitioners.</p>
+                    <p><b>Duration:</b> 60 minutes</p>
+                    <p><b>Benefits:</b> Builds strength, increases cardiovascular endurance, enhances flexibility, and promotes mental focus and clarity.</p>
+                </div>
+            </div>
+        </div>
+        <button onclick="goBack()" class="back-to-home">Back to Home</button>
+    </div>
+    <script src="subscript.js"></script>
+</body>
+</html>

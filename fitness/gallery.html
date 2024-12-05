@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Gallery</title>
+    <style>
+        
+        /* Container for the Yoga Cards */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+            flex-grow: 1;
+        }
+
+        .yoga-card {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+
+        /* Image Styling */
+        .yoga-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Info Box Styling */
+        .yoga-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover Effect */
+        .yoga-card:hover .yoga-image {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+        .yoga-card:hover .yoga-info {
+            transform: translateY(0); /* Slides the info up into view */
+        }
+                /* Navigation Bar */
+        nav ul {
+            list-style-type: none;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aca7a7;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures content is spaced out */
+            height: 100vh; /* Full height of the viewport */
+        }
+        
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            align-self: center; /* Center the button horizontally */
+            margin-bottom: 20px; /* Optional: Adds spacing from the bottom */
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Mountain Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p1.jpeg" alt="Mountain Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Mountain Pose (Tadasana)</h3>
+                <p>A foundational pose that improves posture, balance, and body awareness.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute</p>
+            </div>
+        </div>
+
+        <!-- Warrior II -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p2.jpeg" alt="Warrior II" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Warrior II (Virabhadrasana II)</h3>
+                <p>Strengthens the legs and opens the hips, chest, and shoulders.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute per side</p>
+            </div>
+        </div>
+
+        <!-- Easy Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p3.jpeg" alt="Easy Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Easy Pose (Sukhasana)</h3>
+                <p>A cross-legged seated pose, ideal for meditation and grounding.</p>
+                <p><strong>Duration:</strong> 5 to 10 minutes</p>
+            </div>
+        </div>
+
+        <!-- Seated Forward Fold -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p4.jpeg" alt="Seated Forward Fold" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Seated Forward Fold (Paschimottanasana)</h3>
+                <p>A stretch for the back and hamstrings, promoting flexibility.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute</p>
+            </div>
+        </div>
+
+        <!-- Tree Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p5.jpeg" alt="Tree Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Tree Pose (Vrksasana)</h3>
+                <p>A balancing pose that strengthens the legs and improves focus.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute per side</p>
+            </div>
+        </div>
+
+        <!-- Dancer's Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p6.jpeg" alt="Dancer's Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Dancer's Pose (Natarajasana)</h3>
+                <p>A dynamic balance pose that opens the chest and strengthens the legs.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute per side</p>
+            </div>
+        </div>
+
+        <!-- Cobra Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p7.jpg" alt="Cobra Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Cobra Pose (Bhujangasana)</h3>
+                <p>Opens the chest and strengthens the spine, improving flexibility in the lower back.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute</p>
+            </div>
+        </div>
+
+        <!-- Bridge Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p8.jpeg" alt="Bridge Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Bridge Pose (Setu Bandhasana)</h3>
+                <p>Strengthens the back, glutes, and core, while stretching the chest.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute</p>
+            </div>
+        </div>
+
+        <!-- Pigeon Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p9.jpeg" alt="Pigeon Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Pigeon Pose (Eka Pada Rajakapotasana)</h3>
+                <p>Deeply stretches the hips and glutes, promoting flexibility.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute per side</p>
+            </div>
+        </div>
+
+        <!-- Cow Face Pose -->
+        <div class="yoga-card">
+            <img src="C:\Users\mahat\Desktop\fitness\p10.jpeg" alt="Cow Face Pose" class="yoga-image">
+            <div class="yoga-info">
+                <h3>Cow Face Pose (Gomukhasana)</h3>
+                <p>Opens the hips and shoulders.</p>
+                <p><strong>Duration:</strong> 30 seconds to 1 minute</p>
+            </div>
+        </div>
+    </div>
+    <button onclick="goBack()" class="back-to-home">Back to Home</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

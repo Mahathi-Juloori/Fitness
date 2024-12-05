@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strength Training</title>
+    <link rel="stylesheet" href="substyle.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav> 
+    <div class="filter-container">
+        <label for="filter">Filter Strength Training: </label>
+        <select id="filter" onchange="filterCards(this.value)">
+            <option value="all">Show All</option>
+            <option value="bodyweight">Bodyweight</option>
+            <option value="dumbbells">Dumbbells</option>
+            <option value="barbell">Barbell</option>
+            <option value="kettlebells">Kettlebells</option>
+        </select>
+    </div>    
+    <div class="container">
+        <h1>Strength Training Workouts</h1>
+
+        <!-- Bodyweight Category -->
+        <div class="card" data-url="https://youtu.be/H7aTXu6LA4o?si=wH5LJl5Htyjk-nPz" data-category="bodyweight">
+            <img src="C:\Users\mahat\Desktop\fitness\st1.avif" alt="Push-up Workout" class="card-image">
+            <div class="card-content">
+                <h3>Push-Up Training</h3>
+                <p><b>Description:</b> A full-body workout to strengthen your chest, shoulders, and triceps with push-ups.
+                    <br><b>Duration:</b> 20 minutes.
+                    <br><b>Benefits:</b> Builds upper body strength, improves core stability.
+                    <br><b>Key Muscles Targeted:</b> Chest, shoulders, triceps, core.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" data-url="https://youtu.be/9ocmdKcrL4k?si=z7yJqCZZo--NRBCr" data-category="bodyweight">
+            <img src="C:\Users\mahat\Desktop\fitness\st2.avif" alt="Pull-up Workout" class="card-image">
+            <div class="card-content">
+                <h3>Pull-Up Training</h3>
+                <p><b>Description:</b> A challenging bodyweight exercise to target the back and biceps.
+                    <br><b>Duration:</b> 15 minutes.
+                    <br><b>Benefits:</b> Strengthens upper back, biceps, and forearms.
+                    <br><b>Key Muscles Targeted:</b> Back, biceps.
+                </p>
+            </div>
+        </div>
+
+        <!-- Dumbbells Category -->
+        <div class="card" data-url="https://youtu.be/z0eulElSJK0?si=40K_0q72ZNwdLXeB" data-category="dumbbells">
+            <img src="C:\Users\mahat\Desktop\fitness\st3.avif" alt="Dumbbell Bicep Curl" class="card-image">
+            <div class="card-content">
+                <h3>Dumbbell Bicep Curl</h3>
+                <p><b>Description:</b> A workout focusing on building arm strength, particularly for the biceps.
+                    <br><b>Duration:</b> 15 minutes.
+                    <br><b>Benefits:</b> Targets the biceps and forearms.
+                    <br><b>Key Muscles Targeted:</b> Biceps, forearms.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" data-url="https://youtu.be/Bl28i6fWljU?si=HYxd3tSp7nyclM0x" data-category="dumbbells">
+            <img src="C:\Users\mahat\Desktop\fitness\st4.avif" alt="Dumbbell Shoulder Press" class="card-image">
+            <div class="card-content">
+                <h3>Dumbbell Shoulder Press</h3>
+                <p><b>Description:</b> A great exercise to build strength in the shoulders and triceps.
+                    <br><b>Duration:</b> 20 minutes.
+                    <br><b>Benefits:</b> Strengthens shoulders, triceps, and upper chest.
+                    <br><b>Key Muscles Targeted:</b> Shoulders, triceps.
+                </p>
+            </div>
+        </div>
+
+        <!-- Barbell Category -->
+        <div class="card" data-url="https://youtu.be/gba20DqBubM?si=RIt8d6C1pZ0NYCfu" data-category="barbell">
+            <img src="C:\Users\mahat\Desktop\fitness\st5.avif" alt="Deadlift Workout" class="card-image">
+            <div class="card-content">
+                <h3>Barbell Deadlift</h3>
+                <p><b>Description:</b> A strength-building exercise focusing on the back, hamstrings, and glutes.
+                    <br><b>Duration:</b> 25 minutes.
+                    <br><b>Benefits:</b> Builds lower back, glutes, and hamstrings strength.
+                    <br><b>Key Muscles Targeted:</b> Hamstrings, glutes, lower back.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" data-url="https://youtu.be/pPf8zkJp9GU?si=tzitoIg6FDUNiZ7L" data-category="barbell">
+            <img src="C:\Users\mahat\Desktop\fitness\st6.avif" alt="Barbell Squat" class="card-image">
+            <div class="card-content">
+                <h3>Barbell Squat</h3>
+                <p><b>Description:</b> A compound movement to strengthen the lower body, especially the quads and glutes.
+                    <br><b>Duration:</b> 30 minutes.
+                    <br><b>Benefits:</b> Builds lower body strength, improves core stability.
+                    <br><b>Key Muscles Targeted:</b> Quads, hamstrings, glutes, core.
+                </p>
+            </div>
+        </div>
+
+        <!-- Kettlebells Category -->
+        <div class="card" data-url="https://youtu.be/ptdB52ggDvo?si=DsRSsywEh_ncdaP0" data-category="kettlebells">
+            <img src="C:\Users\mahat\Desktop\fitness\st7.avif" alt="Kettlebell Swing" class="card-image">
+            <div class="card-content">
+                <h3>Kettlebell Swing</h3>
+                <p><b>Description:</b> A dynamic movement that targets the hips, glutes, and core.
+                    <br><b>Duration:</b> 20 minutes.
+                    <br><b>Benefits:</b> Improves posterior chain strength, core stability.
+                    <br><b>Key Muscles Targeted:</b> Hips, glutes, lower back, core.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" data-url="https://youtu.be/i0DeCmY8QFc?si=-VXCqyO_3pEwca27" data-category="kettlebells">
+            <img src="C:\Users\mahat\Desktop\fitness\st8.avif" alt="Goblet Squat" class="card-image">
+            <div class="card-content">
+                <h3>Goblet Squat</h3>
+                <p><b>Description:</b> A great exercise for targeting the legs and glutes with a kettlebell.
+                    <br><b>Duration:</b> 25 minutes.
+                    <br><b>Benefits:</b> Strengthens quads, glutes, and core.
+                    <br><b>Key Muscles Targeted:</b> Quads, hamstrings, glutes, core.
+                </p>
+            </div>
+        </div>
+
+        <button onclick="goBack()" class="back-to-home">Back to Home</button>
+    </div>
+    <script src="subscript.js"></script>
+</body>
+</html>
